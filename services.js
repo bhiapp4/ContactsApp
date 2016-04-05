@@ -1,7 +1,6 @@
 contactsApp.service('ContactService', function(){
     this.contact = null;
-    this.getContactsData = function(){
-         var contactsData = [
+    var contactsData = [
             {
                 "firstName": "Cox",
                 "lastName": "Carney",
@@ -21,7 +20,7 @@ contactsApp.service('ContactService', function(){
                 "contactId": "nancy-waters"
             }
          ];
-        
+    this.getContactsData = function(){        
         return contactsData;
     };
        

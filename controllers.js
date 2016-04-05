@@ -38,6 +38,8 @@ contactsApp.controller('ContactsController',['$scope','$log','$location','Contac
     
     $scope.saveContact = function(){
         console.log($scope.contact);
+        contactService.getContactsData().push($scope.contact);
+        $location.path("/contacts");
     };
     
   //  $scope.export = function(){
